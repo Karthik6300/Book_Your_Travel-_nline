@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: 0;
+}
+#nav {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 40px;
+    top: 2px;
+    background-color: rgba(146, 146, 221, 0.874);
+    justify-content: end;
+    margin-right: 15px;
+    padding: 1vw;
+    width: 96vw;
+    margin: auto;
+    position: sticky;
+    z-index: 2;
+  }
+  #nav li {
+    font-size: larger;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+  .n1 {
+    justify-content: end;
+    font-size: xx-large;
+  }
+  .m2 {
+    margin: auto;
+  }
+  #nav li a {
+    text-decoration: none;
+    color: black;
+  }
+  #main1 {
+    height: 120vh;
+    width: 98vw;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+  }
+  .buy1 {
+    margin-top: -10px;
+    border-radius: 10px;
+    background-color: yellow;
+    align-content: center;
+  }
+  .buy1:hover {
+    background-color: green;
+  }
+  
+  .heading1 {
+    text-align: center;
+    color: white;
+    /* border: 2px solid red; */
+    width: 20vw;
+    display: flex;
+    flex-wrap: wrap;
+    transform: scale(2);
+  }
+  .main2 div {
+    border: 2px solid black;
+    display: flex;
+    width: 30vw;
+    flex-wrap: wrap;
+    width: 30vw;
+    flex-direction: row;
+  }
+  .main2-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 120px;
+  }
+  .dd {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 60vw;
+    height: 50vh;
+    margin-top: 25vh;
+    flex-direction: column;
+    font-size: x-large;
+  }
+  .dd1 {
+    /* border: 2px solid black; */
+    height: 40vh;
+    width: 30vw;
+    color: white;
+  }
+  .dd2 {
+    /* border: 2px solid black; */
+    height: 40vh;
+    width: 30vw;
+    color: white;
+  }
+  button {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: italic;
+    border-radius: 10px;
+    background-color: yellow;
+  }
+  button:hover {
+    background-color: chartreuse;
+    color: red;
+    transform: scale(1.2);
+  }
+  #main3 {
+    width: 40vw;
+    height: 20vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 30px;
+    /* background-color: white; */
+  }
+  .main3-1 {
+    /* background-color: white; */
+    display: flex;
+    flex-wrap: wrap;
+    font-size: xx-large;
+    transform: scale(1.8);
+  }
+  .main3-2 {
+    /* background-color: white; */
+    font-size: large;
+  }
+  .para2{
+    font-size: x-large;
+    font-style: italic;
+  }
+  @keyframes animi1 {
+    10% {
+      background-image: url(https://www.newdelhiairport.in/media/2618/kids-friendly-international-summer-destinations-to-visit-from-delhi-airport.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    20% {
+      background-image: url(https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: pink;
+    }
+    30% {
+      background-image: url(https://wallpapers.com/images/featured/tropical-w8d390to2znzlusb.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    40% {
+      background-image: url(https://w0.peakpx.com/wallpaper/636/414/HD-wallpaper-travel-agency.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    60% {
+      background-image: url(https://wallpapercave.com/wp/wp4069415.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    80% {
+      background-image: url(https://images7.alphacoders.com/661/thumb-1920-661783.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    100% {
+      background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20240722/pngtree-travel-the-world-by-bus-tourism-day-concept-colored-flat-cartoon-image_15995248.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  #main1 {
+    animation-name: animi1;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    background-image: url(https://img.freepik.com/premium-photo/vacation-business-trip-travel-concept-with-graphic-passport-cover-light-suitcase-taking-off-plane-vector-illustration-blue-blank-background_551826-34288.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*animation-fill-mode: forwards;*/
+  }
+  @media screen and (min-width:0px) and (max-width:320px)  {
+    .n1 {
+        font-size: large;
+      }
+      #nav {
+        flex-wrap: wrap;
+        display: flex;
+        /* gap: 40px; */
+        top: 5px;
+        /* background-color: rgba(146, 146, 221, 0.874); */
+        /* justify-content: end; */
+        /* margin-right: 15px; */
+        padding: 1vw;
+        width: 96vw;
+        margin: auto;
+        position: sticky;
+        z-index: 2;
+      }
+      #nav {
+        background-color: pink;
+      }
+      .heading1 {
+        transform: none;
+        justify-content: center;
+        /* margin-left: px; */
+        color: crimson;
+        box-shadow: 0px, 0px, 40px;
+      }
+      #nav {
+        gap: 20px;
+      }
+      .dd {
+        font-size: small;
+        display: flex;
+        text-decoration: none;
+        text-align: left;
+        margin: auto;
+        column-gap: 50px;
+      }
+      .dd1,
+      .dd2 {
+        color: black;
+        align-content: center;
+      }
+      #main1 {
+        display: flex;
+        flex-wrap: wrap;
+        background-size: cover;
+      }
+      #main3 {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+      }
+      .main3-1 {
+        font-size: medium;
+      }
+      .main3-2 {
+        font-size: small;
+      }
+    
+  }

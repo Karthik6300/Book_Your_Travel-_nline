@@ -1,249 +1,333 @@
-* {
+*{
   margin: 0;
   padding: 0;
-  box-shadow: 0;
 }
 #nav {
-    flex-wrap: wrap;
-    display: flex;
-    gap: 40px;
-    top: 2px;
-    background-color: rgba(146, 146, 221, 0.874);
-    justify-content: end;
-    margin-right: 15px;
-    padding: 1vw;
-    width: 96vw;
-    margin: auto;
-    position: sticky;
-    z-index: 2;
-  }
-  #nav li {
-    font-size: larger;
-    flex-wrap: wrap;
-    list-style-type: none;
-  }
-  .n1 {
-    justify-content: end;
-    font-size: xx-large;
-  }
-  .m2 {
-    margin: auto;
-  }
-  #nav li a {
-    text-decoration: none;
-    color: black;
-  }
-  #main1 {
-    height: 120vh;
-    width: 98vw;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
-    align-items: center;
-    flex-direction: column;
-  }
-  .buy1 {
-    margin-top: -10px;
-    border-radius: 10px;
-    background-color: yellow;
-    align-content: center;
-  }
-  .buy1:hover {
-    background-color: green;
-  }
-  
-  .heading1 {
-    text-align: center;
-    color: white;
-    /* border: 2px solid red; */
-    width: 20vw;
-    display: flex;
-    flex-wrap: wrap;
-    transform: scale(2);
-  }
-  .main2 div {
-    border: 2px solid black;
-    display: flex;
-    width: 30vw;
-    flex-wrap: wrap;
-    width: 30vw;
-    flex-direction: row;
-  }
-  .main2-1 {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 120px;
-  }
-  .dd {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 60vw;
-    height: 50vh;
-    margin-top: 25vh;
-    flex-direction: column;
-    font-size: x-large;
-  }
-  .dd1 {
-    /* border: 2px solid black; */
-    height: 40vh;
-    width: 30vw;
-    color: white;
-  }
-  .dd2 {
-    /* border: 2px solid black; */
-    height: 40vh;
-    width: 30vw;
-    color: white;
-  }
-  button {
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-style: italic;
-    border-radius: 10px;
-    background-color: yellow;
-  }
-  button:hover {
-    background-color: chartreuse;
-    color: red;
-    transform: scale(1.2);
-  }
-  #main3 {
-    width: 40vw;
-    height: 20vh;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    gap: 30px;
-    /* background-color: white; */
-  }
-  .main3-1 {
-    /* background-color: white; */
-    display: flex;
-    flex-wrap: wrap;
-    font-size: xx-large;
-    transform: scale(1.8);
-  }
-  .main3-2 {
-    /* background-color: white; */
-    font-size: large;
-  }
-  .para2{
-    font-size: x-large;
-    font-style: italic;
-  }
-  @keyframes animi1 {
-    10% {
-      background-image: url(https://www.newdelhiairport.in/media/2618/kids-friendly-international-summer-destinations-to-visit-from-delhi-airport.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    20% {
-      background-image: url(https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      color: pink;
-    }
-    30% {
-      background-image: url(https://wallpapers.com/images/featured/tropical-w8d390to2znzlusb.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    40% {
-      background-image: url(https://w0.peakpx.com/wallpaper/636/414/HD-wallpaper-travel-agency.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    60% {
-      background-image: url(https://wallpapercave.com/wp/wp4069415.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    80% {
-      background-image: url(https://images7.alphacoders.com/661/thumb-1920-661783.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    100% {
-      background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20240722/pngtree-travel-the-world-by-bus-tourism-day-concept-colored-flat-cartoon-image_15995248.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
-  #main1 {
-    animation-name: animi1;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    background-image: url(https://img.freepik.com/premium-photo/vacation-business-trip-travel-concept-with-graphic-passport-cover-light-suitcase-taking-off-plane-vector-illustration-blue-blank-background_551826-34288.jpg);
+  flex-wrap: wrap;
+  display: flex;
+  gap: 40px;
+  margin: auto;
+  background-color: rgba(146, 146, 221, 0.874);
+  justify-content: center;
+  padding: 20px 4px  ;
+  width: 99%;
+  position: sticky;
+  top: 0px;
+  /* border: 1px solid red; */
+}
+#nav li {
+  font-size: larger;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.buy1 button{
+  padding: 10px;
+border-radius: 10px ;
+margin-top: -20px;
+}
+.buy1 button:hover{
+  background-color: green;
+}
+.n1 {
+  justify-content: end;
+  font-size: xx-large;
+}
+.m2 {
+  margin: auto;
+}
+#nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Coursel start */
+.main-coursel h1{
+ text-align: center;
+ width: 30%;
+ margin: auto;
+ /* border: 2px solid red; */
+}
+.main-coursel{
+  /* border: 1px solid red; */
+  width: 99.4%;
+  height:89vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* ----  animation style------- */
+  animation-name: animi1;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  background-image: url(https://img.freepik.com/premium-photo/vacation-business-trip-travel-concept-with-graphic-passport-cover-light-suitcase-taking-off-plane-vector-illustration-blue-blank-background_551826-34288.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ----animation keyframe starts---- */
+@keyframes animi1 {
+  10% {
+    background-image: url(https://www.newdelhiairport.in/media/2618/kids-friendly-international-summer-destinations-to-visit-from-delhi-airport.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /*animation-fill-mode: forwards;*/
   }
-  @media screen and (min-width:0px) and (max-width:320px)  {
-    .n1 {
-        font-size: large;
-      }
-      #nav {
-        flex-wrap: wrap;
-        display: flex;
-        /* gap: 40px; */
-        top: 5px;
-        /* background-color: rgba(146, 146, 221, 0.874); */
-        /* justify-content: end; */
-        /* margin-right: 15px; */
-        padding: 1vw;
-        width: 96vw;
-        margin: auto;
-        position: sticky;
-        z-index: 2;
-      }
-      #nav {
-        background-color: pink;
-      }
-      .heading1 {
-        transform: none;
-        justify-content: center;
-        /* margin-left: px; */
-        color: crimson;
-        box-shadow: 0px, 0px, 40px;
-      }
-      #nav {
-        gap: 20px;
-      }
-      .dd {
-        font-size: small;
-        display: flex;
-        text-decoration: none;
-        text-align: left;
-        margin: auto;
-        column-gap: 50px;
-      }
-      .dd1,
-      .dd2 {
-        color: black;
-        align-content: center;
-      }
-      #main1 {
-        display: flex;
-        flex-wrap: wrap;
-        background-size: cover;
-      }
-      #main3 {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-      }
-      .main3-1 {
-        font-size: medium;
-      }
-      .main3-2 {
-        font-size: small;
-      }
-    
+  20% {
+    background-image: url(https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: pink;
   }
+  30% {
+    background-image: url(https://wallpapers.com/images/featured/tropical-w8d390to2znzlusb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  40% {
+    background-image: url(https://w0.peakpx.com/wallpaper/636/414/HD-wallpaper-travel-agency.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  60% {
+    background-image: url(https://wallpapercave.com/wp/wp4069415.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  80% {
+    background-image: url(https://images7.alphacoders.com/661/thumb-1920-661783.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20240722/pngtree-travel-the-world-by-bus-tourism-day-concept-colored-flat-cartoon-image_15995248.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.heading1{
+  width: 99.3%;
+  text-align: center;
+  /* border: 2px solid red; */
+
+}
+.dd {
+  /* border: 1px solid red; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  align-content: space-around;
+  gap: 20px;
+  width: 99.8%;
+  height: 40%;
+  /* margin-top: 25vh; */
+  font-size: large;
+  /* border: 1px solid red; */
+  color: white;
+}
+.dd1 {
+  text-align: center;
+  /* border: 2px solid black; */
+  /* height: 40%; */
+  width:25%;
+  color: black;
+}
+.dd2 {
+  text-align: center;
+  /* border: 2px solid black; */
+  /* height: 40%; */
+  width: 25%;
+  color: black;
+}
+.but1 button {
+  font-style: italic;
+  border-radius: 5px;
+  margin: auto;
+  display: flex;
+  padding: 5px 5px;
+  justify-content: center;
+  align-content: center;
+  /* background-color: yellow; */
+}
+.but1 button:hover {
+  background-color: chartreuse;
+  color: red;
+  transform: scale(1.2);
+}
+
+
+/* gallary-section */
+#gallary-main{
+  text-align: center;
+}
+
+/* gallary frames section start */
+.main-frame{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ padding: 2rem 0.8rem;
+ gap: 1rem ;
+ /* border: 1px solid red; */
+  /* margin: auto; */
+}
+
+.frame-name{
+  text-align: center;
+  font-size: larger;
+}
+.frames-button{
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+.frame1 a img{
+  border-radius: 10px;
+}
+.frame1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  width: 28.7rem;
+  height: 25rem;
+  padding: 0.5rem;
+  box-shadow: 2px 2px  10px black;
+}
+.button1{
+  padding:0.8rem;
+  background-color: rgb(238, 19, 55);
+  color: white;
+  border-radius: 10px;
+}
+.button2{
+  padding: 0.8rem;
+  background-color: rgb(95, 95, 241);
+  color: white;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Quirees */
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+    /* main screen  */
+  .dd1{
+    width: 100%;
+    font-size: smaller;
+  }
+  .dd2{
+    width: 100%;
+    font-size: smaller;
+  }
+  .heading1{
+    font-size: 1rem;
+  }
+
+  /*gallary frames section */
+  .main-frame{
+    gap: 1rem;
+  }
+  .frame1{
+    width: 15rem;
+  }
+  .frame1 a img{
+    width: 15rem;
+
+  }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* main screen  */
+  .dd1{
+    width: 100%;
+    font-size: 1rem;
+  }
+  .dd2{
+    width: 100%;
+    font-size: 1rem;
+  }
+  .heading1{
+    font-size: 1.5rem;
+  }
+
+   /*gallary frames section */
+   .main-frame{
+    gap: 1rem;
+  }
+  .frame1{
+    width: 20rem;
+  }
+  .frame1 a img{
+    width: 20rem;
+
+  }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* main screen  */
+  .dd1{
+    width: 50%;
+  }
+  .dd2{
+    width: 50%;
+  }
+  /*gallary frames section */
+  .main-frame{
+    gap: 1rem;
+  }
+  .frame1{
+    width: 20rem;
+  }
+  .frame1 a img{
+    width: 20rem;
+
+  }
+
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    /* main screen  */
+    .dd1{
+      width: 50%;
+    }
+    .dd2{
+      width: 50%;
+    }
+
+  /*gallary frames section */
+  .main-frame{
+    gap: 5rem;
+  }
+  .frame1{
+    width: 28rem;
+  }
+  .frame1 a img{
+    width: 28rem;
+
+  }
+
+
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1441px) {
+   /*gallary frames section */
+  .main-frame{
+    gap: 1.8rem;
+  }
+}
+

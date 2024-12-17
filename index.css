@@ -25,13 +25,15 @@ svg {
   justify-content: space-around;
   list-style-type: none;
 }
-.buy1 button {
+.buy1 button{
   padding: 10px;
   border-radius: 10px;
   margin-top: -20px;
+  background-color: yellow;
 }
-.buy1 button:hover {
+.buy1 button:hover{
   background-color: green;
+  color: white;
 }
 .n1 {
   justify-content: end;
@@ -80,7 +82,7 @@ svg {
     background-image: url(https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: pink;
+    color: black;
   }
   30% {
     background-image: url(https://wallpapers.com/images/featured/tropical-w8d390to2znzlusb.jpg);
@@ -110,6 +112,7 @@ svg {
 }
 
 .heading1 {
+  font-size: 3rem;
   width: 99.3%;
   text-align: center;
   /* border: 2px solid red; */
@@ -132,14 +135,14 @@ svg {
   text-align: center;
   /* border: 2px solid black; */
   /* height: 40%; */
-  width: 25%;
+  width: 40%;
   color: black;
 }
 .dd2 {
   text-align: center;
   /* border: 2px solid black; */
   /* height: 40%; */
-  width: 25%;
+  width: 40%;
   color: black;
 }
 .but1 button {
@@ -150,12 +153,16 @@ svg {
   padding: 5px 5px;
   justify-content: center;
   align-content: center;
+  background-color: yellow;
   /* background-color: yellow; */
 }
 .but1 button:hover {
   background-color: chartreuse;
-  color: red;
+  color:black;
   transform: scale(1.2);
+}
+.but1 a{
+  text-decoration: none;
 }
 
 /* gallary-section */
@@ -185,6 +192,10 @@ svg {
 }
 .frame1 a img {
   border-radius: 10px;
+  width: 28.7rem;
+}
+.frame1:hover a{
+  transform: scale(1.03);
 }
 .frame1 {
   display: flex;
@@ -204,12 +215,23 @@ svg {
   color: white;
   border-radius: 10px;
 }
+.button1:hover{
+  background-color: rgb(178, 178, 245);
+  color: black;
+}
+
+
 .button2 {
   padding: 0.8rem;
   background-color: rgb(95, 95, 241);
   color: white;
   border-radius: 10px;
 }
+.button2:hover{
+  background-color: rgb(178, 178, 245);
+  
+}
+
 /* ------monitor section ------- */
 
 #main-monitor {
@@ -417,6 +439,12 @@ svg {
 /* Media Quirees */
 /* Extra Small Devices (Phones) */
 @media (max-width: 480px) {
+  /* nav bar */
+#nav{
+  padding: 10px 5px;
+  gap: 20px;
+}
+ 
   /* main screen  */
   .dd1 {
     width: 100%;
@@ -440,44 +468,66 @@ svg {
   .frame1 a img {
     width: 15rem;
   }
+  .button1{
+    padding: 0rem;
+  }
+  .button2{
+    padding: 0rem;
+  }
   /* monitor section */
 
   #heading-1 {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    /* border: 2px solid black; */
+    width: 70%;
+    text-align: center;
   }
   .heading-2 {
-    font-size: 0.7rem;
+    /* border: 2px solid black; */
+    font-size: 1rem;
     margin: auto;
     width: 70%;
+    padding: 0.5rem;
   }
-  #monitor2 {
-    padding: 40px;
-    width: 30%;
-    height: 20rem;
+  #main-monitor{  
+    display: block;
+    padding: 1px;
+    text-align: center;
+    /* border: 2px solid black; */
   }
   #monitor-list {
-    font-size: 0.5rem;
+    /* border: 2px solid black; */
+    font-size: 1rem;
     gap: 20px;
+    display: block;
+    padding: 0.5rem;
+
   }
+  
   #monitor2 {
-    padding: 20px;
-    width: 20%;
+    padding: 3rem;
+    width: 50%;
     height: 10rem;
     margin: auto;
+  }
+  .monitor1{
+    width: 90%;
   }
 
   /* Design layout section */
 
   .design-layout {
     gap: 0.5rem;
+    display: block;
   }
 
   .design-img {
-    width: 40%;
+    width: 100%;
     height: 20rem;
+    border: 2px solid white;
   }
   .design-dis {
-    width: 35%;
+    width: 100%;
     line-height: 20px;
     padding: 10px;
   }
@@ -530,6 +580,13 @@ svg {
 
 /* Small Devices (Tablets) */
 @media (min-width: 481px) and (max-width: 768px) {
+
+  /* nav bar */
+
+  #nav{
+    padding: 10px 5px;
+    gap: 20px;
+  }
   /* main screen  */
   .dd1 {
     width: 100%;

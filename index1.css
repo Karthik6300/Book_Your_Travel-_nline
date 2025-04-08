@@ -1,0 +1,718 @@
+/* Base Reset and Global Styles */
+:root {
+  --primary-color: rgba(146, 146, 221, 0.874);
+  --secondary-color: yellow;
+  --accent-color: green;
+  --danger-color: rgb(238, 19, 55);
+  --info-color: rgb(95, 95, 241);
+  --light-bg: rgb(238, 233, 225);
+  --feature-bg: rgb(231, 198, 137);
+  --transition: all 0.3s ease;
+  --border-radius: 10px;
+  --shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* SVG Styles */
+svg {
+  height: 20%;
+  max-width: 100%;
+}
+
+/* Navigation Bar */
+#nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: auto;
+  background-color: var(--primary-color);
+  justify-content: center;
+  padding: 20px 4px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 100;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+#nav li {
+  font-size: larger;
+  list-style-type: none;
+}
+
+#nav li a {
+  text-decoration: none;
+  color: black;
+  transition: var(--transition);
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+}
+
+#nav li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.buy1 button {
+  padding: 10px 15px;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.buy1 button:hover {
+  background-color: var(--accent-color);
+  color: white;
+  transform: scale(1.05);
+}
+
+.n1 {
+  justify-content: end;
+  font-size: xx-large;
+}
+
+/* Carousel Section */
+.main-coursel {
+  width: 100%;
+  height: 90vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: animi1 15s infinite normal;
+  background-image: url(https://img.freepik.com/premium-photo/vacation-business-trip-travel-concept-with-graphic-passport-cover-light-suitcase-taking-off-plane-vector-illustration-blue-blank-background_551826-34288.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.main-coursel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.main-coursel h1,
+.dd {
+  position: relative;
+  z-index: 2;
+}
+
+.main-coursel h1 {
+  text-align: center;
+  width: 50%;
+  max-width: 600px;
+  margin: auto;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Animation Keyframes */
+@keyframes animi1 {
+  0%,
+  10% {
+    background-image: url(https://img.freepik.com/premium-photo/vacation-business-trip-travel-concept-with-graphic-passport-cover-light-suitcase-taking-off-plane-vector-illustration-blue-blank-background_551826-34288.jpg);
+  }
+  15%,
+  25% {
+    background-image: url(https://www.newdelhiairport.in/media/2618/kids-friendly-international-summer-destinations-to-visit-from-delhi-airport.jpg);
+  }
+  30%,
+  40% {
+    background-image: url(https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg);
+  }
+  45%,
+  55% {
+    background-image: url(https://wallpapers.com/images/featured/tropical-w8d390to2znzlusb.jpg);
+  }
+  60%,
+  70% {
+    background-image: url(https://w0.peakpx.com/wallpaper/636/414/HD-wallpaper-travel-agency.jpg);
+  }
+  75%,
+  85% {
+    background-image: url(https://wallpapercave.com/wp/wp4069415.jpg);
+  }
+  90%,
+  100% {
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20240722/pngtree-travel-the-world-by-bus-tourism-day-concept-colored-flat-cartoon-image_15995248.jpg);
+  }
+}
+
+.heading1 {
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.dd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100%;
+  font-size: large;
+  color: white;
+}
+
+.dd1,
+.dd2 {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  width: 40%;
+  color: white;
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(5px);
+}
+
+.but1 button {
+  font-style: italic;
+  border-radius: 5px;
+  margin: 15px auto 0;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: var(--transition);
+}
+
+.but1 button:hover {
+  background-color: chartreuse;
+  color: black;
+  transform: scale(1.2);
+}
+
+.but1 a {
+  text-decoration: none;
+}
+
+/* Gallery Section */
+#gallary-main {
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+#gallary-main h2 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Gallery Frames */
+.main-frame {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 0.8rem;
+  gap: 1.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.frame-name {
+  text-align: center;
+  font-size: larger;
+  margin: 10px 0;
+}
+
+.frames-button {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.frame1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--border-radius);
+  width: 28.7rem;
+  height: auto;
+  padding: 0.5rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  background-color: white;
+}
+
+.frame1:hover {
+  transform: translateY(-5px);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+.frame1 a img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.button1,
+.button2 {
+  padding: 0.8rem;
+  border-radius: var(--border-radius);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  flex: 1;
+  transition: var(--transition);
+}
+
+.button1 {
+  background-color: var(--danger-color);
+}
+
+.button1:hover {
+  background-color: rgb(178, 178, 245);
+  color: black;
+}
+
+.button2 {
+  background-color: var(--info-color);
+}
+
+.button2:hover {
+  background-color: rgb(178, 178, 245);
+  color: black;
+}
+
+/* Monitor Section */
+#main-monitor {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--primary-color);
+  padding: 40px 0;
+}
+
+.monitor1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 2rem;
+}
+
+#heading-1 {
+  width: auto;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.heading-2 {
+  width: 80%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#monitor-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  font-size: 1.3rem;
+  justify-content: center;
+  color: white;
+}
+
+#monitor-list li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+#monitor2 {
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#monitor2 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+}
+
+/* Design Layout Section */
+.design-layout {
+  background-color: var(--light-bg);
+  padding: 60px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+
+.design-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.design-dis {
+  text-align: start;
+  padding: 30px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.design-dis h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.design-dis p {
+  font-size: medium;
+  line-height: 1.8;
+}
+
+/* Key Features Section */
+.key-features {
+  background-color: var(--feature-bg);
+  padding: 70px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.key-heading1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.key-dis {
+  width: 70%;
+  max-width: 900px;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* Features Divisions */
+.features-divisions {
+  padding: 40px 20px 60px;
+  background-color: var(--feature-bg);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.feature1 {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 15rem;
+  width: 30%;
+  min-width: 280px;
+  background-color: white;
+  text-align: center;
+  border-radius: 30px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.feature1:hover {
+  transform: translateY(-10px);
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+}
+
+.feature-heading {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.feature-dis {
+  font-size: 1.2rem;
+  width: 90%;
+  line-height: 1.5;
+}
+
+/* Period Section */
+.period-section {
+  padding: 70px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  background-color: #f9f9f9;
+}
+
+.period-dis1 {
+  font-size: 1.8rem;
+  color: #333;
+  max-width: 900px;
+  margin-bottom: 10px;
+}
+
+.period-dis2,
+.period-dis3 {
+  font-size: 1.3rem;
+  max-width: 800px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Footer Section */
+.footer-section {
+  text-align: center;
+  color: white;
+  background-color: #222;
+  padding: 50px 20px;
+  line-height: 1.8;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: white;
+  transition: var(--transition);
+}
+
+.footer-opt {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 1.5rem;
+  margin: 30px 0;
+}
+
+.footer-opt1,
+.footer-opt2,
+.footer-opt3 {
+  transition: var(--transition);
+}
+
+.footer-opt1:hover,
+.footer-opt2:hover,
+.footer-opt3:hover {
+  color: var(--secondary-color);
+  transform: scale(1.02);
+}
+
+.footer-button {
+  padding: 12px 25px;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: var(--transition);
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.footer-button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Media Queries - Mobile First Approach */
+/* Base styles are for mobile, and we scale up */
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+  /* Navigation */
+  #nav {
+    padding: 10px 5px;
+    gap: 15px;
+  }
+
+  /* Main Carousel */
+  .main-coursel {
+    height: 80vh;
+  }
+
+  .heading1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .dd {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dd1,
+  .dd2 {
+    width: 90%;
+  }
+
+  /* Gallery Frames */
+  .frame1 {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* Monitor Section */
+  .monitor1,
+  #monitor2 {
+    width: 100%;
+  }
+
+  #heading-1 {
+    font-size: 1.5rem;
+  }
+
+  .heading-2 {
+    width: 90%;
+    font-size: 1.1rem;
+  }
+
+  #monitor-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Design Layout */
+  .design-dis h1 {
+    font-size: 1.8rem;
+  }
+
+  /* Features */
+  .feature1 {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .key-heading1 {
+    font-size: 1.8rem;
+  }
+
+  .key-dis,
+  .period-dis1 {
+    font-size: 1.2rem;
+    width: 90%;
+  }
+
+  .period-dis2,
+  .period-dis3 {
+    font-size: 1rem;
+  }
+}
+
+/* Small Devices (Tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .heading1 {
+    font-size: 2rem;
+  }
+
+  .dd1,
+  .dd2 {
+    width: 45%;
+  }
+
+  .frame1 {
+    width: 45%;
+    min-width: 300px;
+  }
+
+  .monitor1,
+  #monitor2 {
+    width: 100%;
+  }
+
+  #monitor2 {
+    order: -1;
+  }
+
+  .feature1 {
+    width: 45%;
+  }
+
+  .key-dis {
+    width: 80%;
+  }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .dd1,
+  .dd2 {
+    width: 45%;
+  }
+
+  .frame1 {
+    width: 45%;
+    min-width: 320px;
+  }
+
+  .key-dis {
+    width: 75%;
+  }
+
+  .feature1 {
+    width: 28%;
+    min-width: 220px;
+  }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) {
+  .main-coursel h1 {
+    font-size: 3.5rem;
+  }
+
+  .dd1,
+  .dd2 {
+    width: 40%;
+    max-width: 500px;
+  }
+
+  .main-frame {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .frame1 {
+    width: 30%;
+    min-width: 350px;
+    max-width: 400px;
+  }
+
+  .key-dis {
+    width: 60%;
+    max-width: 1000px;
+  }
+}
